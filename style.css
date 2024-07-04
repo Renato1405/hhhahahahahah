@@ -1,0 +1,57 @@
+/* Reset de estilos básicos */
+body, h1, h2, h3, p, ul, ol, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 20px;
+    padding: 0;
+    background-color: #f3f3f3; /* Cor de fundo geral */
+}
+
+header {
+    background-color: #0004ff62;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+section {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #000000e1;
+    margin-top: 0; /* Remove a margem superior padrão */
+}
+
+p {
+    text-align: justify;
+}
+
+.plantation-image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    background-color: #0004ff62;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

@@ -62,3 +62,130 @@
         </p>
     <img src="https://industriasa.com.br/wp-content/uploads/2023/02/Amazon-renova-agricultura-sustentavel-com-primeira-alface-de-baixo-impacto.jpg" alt="Agricultura Sustentável" class="plantation-image">
 </section>
+
+<section>
+    <h2>Exportação de alguns produtos para a cidade: Rio de Janeiro</h2>
+<p>
+    <strong>CAFÉ:</strong> O Brasil é um dos maiores produtores e exportadores de café do mundo, e o Rio de Janeiro importa uma quantidade significativa desse produto.
+
+        <strong>AÇUCAR:</strong> Outro produto importante, especialmente vindo de estados produtores como São Paulo e Minas Gerais.
+
+        
+        <strong>SOJA:</strong>   Embora o Rio de Janeiro não seja um grande produtor de soja, importa grandes quantidades desse produto para alimentação animal e outros usos industriais.
+
+        
+        
+        <strong>MILHO:</strong> Importado para diversas finalidades, como ração animal e produção de biocombustíveis.
+
+        
+        <strong>FRUTAS:</strong> O Rio de Janeiro recebe diversas frutas frescas e processadas, como laranjas, maçãs, bananas, entre outras, de várias regiões do Brasil.
+    </p>
+    <img src="https://super.abril.com.br/wp-content/uploads/2017/12/rio-de-janeiro.png?w=720&h=440&crop=1" alt="Agricultura Sustentável" class="plantation-image">
+</section>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aba com HTML, CSS e JavaScript</title>
+<style>
+    /* Estilos básicos para a aba */
+    .tab {
+        display: none; /* Esconder a aba por padrão */
+        padding: 20px;
+        border: 1px solid #ccc;
+    }
+    
+    .tab.active {
+        display: block; /* Mostrar a aba ativa */
+    }
+    
+    .tab-button {
+        cursor: pointer;
+        padding: 10px 20px;
+        background-color: #f0f0f0;
+        border: 1px solid #ccc;
+        border-bottom: none;
+        border-radius: 5px 5px 0 0;
+    }
+    
+    .tab-button.active {
+        background-color: #fff;
+        border-bottom: 1px solid #fff;
+    }
+    
+    .tabs {
+        overflow: hidden;
+        background-color: #f0f0f0;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        margin-bottom: 20px;
+    }
+</style>
+</head>
+<body>
+
+<div class="tabs">
+    <div class="tab-button active" onclick="openTab(event, 'tab1')">PRODUTOS</div>
+</div>
+
+<div id="tab1" class="tab active">
+    <h2>CAFÉ</h2>
+    <p><strong>Produção e Variedades:</strong>
+
+        • O Brasil é o maior produtor e exportador de café do mundo, destacando-se principalmente pela produção de café arábica e robusta.
+        • Os principais estados produtores são Minas Gerais, Espírito Santo, São Paulo, Bahia e outros.
+
+     <strong>Principais Destinos:</strong>
+
+        • Os principais destinos das exportações brasileiras de café incluem Estados Unidos, Alemanha, Japão, Itália, Bélgica, e outros países europeus.
+
+     <P></P><strong>Volume e Valor:</strong>
+
+     • O Brasil exporta anualmente milhões de sacas de café, tanto da variedade arábica quanto robusta.
+     • O valor das exportações de café do Brasil é significativo para a balança comercial do país.
+
+     <P></P><strong>Impacto Econômico:</strong>
+
+     • A exportação de café desempenha um papel crucial na economia brasileira, gerando empregos diretos e indiretos em todas as etapas da cadeia produtiva.
+     • A cafeicultura é uma fonte importante de receita para muitos pequenos produtores e cooperativas no Brasil.
+
+
+
+    </p>
+</div>
+
+<div id="tab1" class="tab active">
+    <h2>Conteúdo da Aba 1</h2>
+    <p>Este é o conteúdo da aba.</p>
+</div>
+
+<script>
+    // Função para alternar entre as abas
+    function openTab(evt, tabName) {
+        var i, tabcontent, tablinks;
+        
+        // Esconder todos os conteúdos das abas
+        tabcontent = document.getElementsByClassName("tab");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+        
+        // Remover a classe "active" de todos os botões de abas
+        tablinks = document.getElementsByClassName("tab-button");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        
+        // Mostrar o conteúdo da aba selecionada e adicionar a classe "active" ao botão da aba
+        document.getElementById(tabName).style.display = "block";
+        evt.currentTarget.className += " active";
+    }
+    
+    // Mostrar a primeira aba por padrão ao carregar a página
+    document.getElementById("tab1").style.display = "block";
+    document.getElementsByClassName("tab-button")[0].className += " active";
+</script>
+
+</body>
+</html>
